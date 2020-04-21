@@ -1,0 +1,6 @@
+{
+  "name": "Konfigurasi",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Konfigurasi.js"
+}

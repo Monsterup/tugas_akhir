@@ -1,0 +1,91 @@
+{
+  "name": "avesbox-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@availity/reactstrap-validation-select": "^5.3.23",
+    "@coreui/coreui": "^2.1.12",
+    "@coreui/coreui-plugin-chartjs-custom-tooltips": "^1.3.1",
+    "@coreui/icons": "0.3.0",
+    "@coreui/react": "^2.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "apollo-client": "^2.6.8",
+    "availity-reactstrap-validation": "^2.6.1",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "chart.js": "^2.8.0",
+    "child_process": "^1.0.2",
+    "classnames": "^2.2.6",
+    "core-js": "^3.1.4",
+    "dotenv": "^8.2.0",
+    "electron-is-dev": "^1.1.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "flag-icon-css": "^3.3.0",
+    "font-awesome": "^4.7.0",
+    "http": "^0.0.0",
+    "node-sass": "^4.12.0",
+    "now": "^17.0.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.10.1",
+    "react": "^16.12.0",
+    "react-app-polyfill": "^1.0.1",
+    "react-bootstrap-sweetalert": "^5.1.9",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.12.0",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.1.0",
+    "react-google-recaptcha": "^2.0.1",
+    "react-loader-spinner": "^3.1.14",
+    "react-notifications-component": "^2.3.0",
+    "react-router-config": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.3.0",
+    "react-select": "^3.0.8",
+    "react-test-renderer": "^16.8.6",
+    "reactstrap": "^8.0.0",
+    "routes": "^2.1.0",
+    "simple-line-icons": "^2.4.1",
+    "url": "^0.11.0"
+  },
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "set HTTPS=true&&react-scripts start",
+    "start_r": "react-scripts start",
+    "build": "react-scripts build",
+    "build_w": "webpack --mode production",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"yarn start\" \"wait-on https://localhost:3000 && electron .\"",
+    "build_e": "electron-packager . --out=dist/win --platform=win32 --arch=x64 --icon=./public/logo192.png --asar=true --overwrite"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0",
+    "electron-packager": "^14.1.1",
+    "nodemon": "^2.0.2",
+    "react-scripts": "^3.0.1",
+    "wait-on": "^3.3.0"
+  },
+  "peerDependencies": {
+    "@availity/reactstrap-validation-select": "^5.3.23"
+  }
+}
